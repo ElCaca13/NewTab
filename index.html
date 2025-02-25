@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost links</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/product-sans" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/32424745d7.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+
+<main>
+    <div id="Searchbarcontainer">
+        <input placeholder="Search..." type="search" id="searchbar" autocomplete="off">
+    </div>
+    <div id="fastlinks">
+        <i onclick="window.location.href='https://discord.com/channels/@me'" class="fa-brands fa-discord"></i>
+        <i onclick="window.location.href='https://youtube.com'" class="fa-brands fa-youtube"></i>
+        <i onclick="window.location.href='https://odulphus.magister.net'" class="fa-solid fa-graduation-cap"></i>
+        <i onclick="window.location.href='https://mail.google.com/mail'" class="fa-solid fa-envelope"></i>
+        <i onclick="window.location.href='https://vscode.dev/?vscode-lang=nl'" class="fa-solid fa-code"></i>
+    </div>
+</main>
+
+    <script>
+        document.getElementById("searchbar").addEventListener("keydown", function(event) {
+            if (event.key === "Enter") {
+
+                let zoekterm = document.getElementById("searchbar").value;
+
+                if (zoekterm.trim() !== "") {
+                    googleSearchURL = `https://www.google.com/search?q=${zoekterm}`;
+                    window.location.href = googleSearchURL;
+                } else {
+                    alert ("Voer een zoekterm in!");
+                }
+            }
+        });
+    </script>
+</body>
+</html>
