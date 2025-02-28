@@ -165,10 +165,10 @@
             }
         });
 
-        function changebackground(Image) {
-            document.getElementById("body").style.backgroundImage = `url(`${Image}`)`
-        }
-
+       function changebackground(Image) {
+             document.getElementById("body").style.backgroundImage = `url('${Image}')`;
+       }
+        
         window.onload = function() {
             const backgroundAmount = 2;
             const randomNumber = Math.floor(Math.random() * backgroundAmount + 1);
