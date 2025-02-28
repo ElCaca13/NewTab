@@ -168,23 +168,21 @@
        function changebackground(Image) {
              document.getElementById("body").style.backgroundImage = `url('${Image}')`;
        }
+    
+        const backgroundAmount = 4;
+        const randomNumber = Math.floor(Math.random() * backgroundAmount + 1);
         
-        window.onload = function() {
-            const backgroundAmount = 4;
-            const randomNumber = Math.floor(Math.random() * backgroundAmount + 1);
-            
-            if (randomNumber === 1) {
-                changebackground("https://images.unsplash.com/photo-1474524955719-b9f87c50ce47?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3Vuc2V0JTIwd2FsbHBhcGVyfGVufDB8fDB8fHww");
-            } else if (randomNumber === 2) {
-                changebackground('https://blog.alpenreizen.nl/wp-content/uploads/2019/05/italy-1587287_1920-e1621332984983.jpg');
-            } else if (randomNumber === 3) {
-                changebackground("https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3Vuc2V0JTIwd2FsbHBhcGVyfGVufDB8fDB8fHww");
-            } else if (randomNumber === 4) {
-                changebackground("https://images5.alphacoders.com/444/444113.jpg")
-            } else {
-                alert("Something went wrong with loading the background.")
-            }
-        };
+        if (randomNumber === 1) {
+            changebackground("https://images.unsplash.com/photo-1474524955719-b9f87c50ce47?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3Vuc2V0JTIwd2FsbHBhcGVyfGVufDB8fDB8fHww");
+        } else if (randomNumber === 2) {
+            changebackground('https://blog.alpenreizen.nl/wp-content/uploads/2019/05/italy-1587287_1920-e1621332984983.jpg');
+        } else if (randomNumber === 3) {
+            changebackground("https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3Vuc2V0JTIwd2FsbHBhcGVyfGVufDB8fDB8fHww");
+        } else if (randomNumber === 4) {
+            changebackground("https://images5.alphacoders.com/444/444113.jpg")
+        } else {
+            alert("Something went wrong with loading the background.")
+        }
 
     </script>
 </body>
