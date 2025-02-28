@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/32424745d7.js" crossorigin="anonymous"></script>
    
 </head>
-<body>
+<body id="body">
 
 <main>
     <div id="Searchbarcontainer">
@@ -38,6 +38,20 @@
                 }
             }
         });
+
+        function changebackground(Image) {
+            document.getElementById("body").style.background-image = url(`${Image}`)
+        }
+
+        const backgroundAmount = 2
+        
+        const randomNumber = math.floor(math.random() * backgroundAmount + 1)
+        
+        if (randomNumber === 1) {
+            changebackground("https://images.unsplash.com/photo-1474524955719-b9f87c50ce47?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3Vuc2V0JTIwd2FsbHBhcGVyfGVufDB8fDB8fHww")
+        } else if (randomNumber === 2) {
+            changebackground('https://blog.alpenreizen.nl/wp-content/uploads/2019/05/italy-1587287_1920-e1621332984983.jpg')
+        }
     </script>
 </body>
 </html>
