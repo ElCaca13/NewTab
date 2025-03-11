@@ -51,7 +51,7 @@
             margin: 10px;
         }
         
-        .fa-brands.fa-discord {
+        #fastlinks i {
             font-size: 30px;
             color: #4666dc;
             padding: 10px;
@@ -62,75 +62,9 @@
             -1px  1px 0 black, 
             1px  1px 0 black;    
         }
-        .fa-brands.fa-discord:hover {
+        #fastlinks i:hover {
             color: #2e54de;
             cursor: pointer;
-            transform: scale(115%) rotate(-7deg);
-        }
-        
-        .fa-brands.fa-youtube {
-            font-size: 30px;
-            color: #ff0000;
-            padding: 10px;
-            transition: transform 0.35s ease-in-out;
-            text-shadow: 
-            -1px -1px 0 black, 
-            1px -1px 0 black, 
-            -1px  1px 0 black, 
-            1px  1px 0 black;  
-        }
-        .fa-brands.fa-youtube:hover {
-            color: #ba0000;
-            cursor: pointer;
-            transform: scale(115%) rotate(-7deg);
-        }
-        
-        .fa-solid.fa-graduation-cap {
-            font-size: 30px;
-            color: #00aeff;
-            padding: 10px;
-            transition: transform 0.35s ease-in-out;
-            text-shadow: 
-            -1px -1px 0 black, 
-            1px -1px 0 black, 
-            -1px  1px 0 black, 
-            1px  1px 0 black;  
-        }
-        .fa-solid.fa-graduation-cap:hover {
-            color: #0088c7;
-            cursor: pointer;
-            transform: scale(115%) rotate(-7deg);
-        }
-        .fa-solid.fa-envelope {
-            font-size: 30px;
-            color: #ececec;
-            padding: 10px;
-            transition: transform 0.35s ease-in-out;
-            text-shadow: 
-            -1px -1px 0 black, 
-            1px -1px 0 black, 
-            -1px  1px 0 black, 
-            1px  1px 0 black; 
-        }
-        .fa-solid.fa-envelope:hover {
-            color: #bdbdbd;
-            cursor: pointer;
-            transform: scale(115%) rotate(-7deg);
-        }
-        .fa-solid.fa-code {
-            font-size: 30px;
-            color:rgb(255, 235, 88);
-            padding: 10px;
-            transition: transform 0.35s ease-in-out;
-            text-shadow: 
-            -1px -1px 0 black, 
-            1px -1px 0 black, 
-            -1px  1px 0 black, 
-            1px  1px 0 black; 
-        }
-        .fa-solid.fa-code:hover {
-            cursor: pointer;
-            color: rgb(213, 195, 62);
             transform: scale(115%) rotate(-7deg);
         }
     </style>
@@ -142,11 +76,12 @@
         <input placeholder="Search..." type="search" id="searchbar" autocomplete="off">
     </div>
     <div id="fastlinks">
-        <i onclick="window.location.href='https://discord.com/channels/@me'" class="fa-brands fa-discord"></i>
-        <i onclick="window.location.href='https://youtube.com'" class="fa-brands fa-youtube"></i>
-        <i onclick="window.location.href='https://odulphus.magister.net'" class="fa-solid fa-graduation-cap"></i>
-        <i onclick="window.location.href='https://mail.google.com/mail'" class="fa-solid fa-envelope"></i>
-        <i onclick="window.location.href='https://vscode.dev/?vscode-lang=nl'" class="fa-solid fa-code"></i>
+        <i onclick="window.location.href='https://discord.com/channels/@me'" class="fa-brands fa-discord" style="font-color: #6b72ff;"></i>
+        <i onclick="window.location.href='https://youtube.com'" class="fa-brands fa-youtube" font-color: #ff001e;></i>
+        <i onclick="window.location.href='https://odulphus.magister.net'" class="fa-solid fa-graduation-cap" font-color: #00c0de;></i>
+        <i onclick="window.location.href='https://mail.google.com/mail'" class="fa-solid fa-envelope" font-color: #dedede;></i>
+        <i onclick="window.location.href='https://vscode.dev/?vscode-lang=nl'" class="fa-solid fa-code" font-color: #0047c2;></i>
+        <i onclick="window.location.href='file:///home/chronos/u-73f24251731a9d2b0fc1cb2a6ebb41849f3810b0/MyFiles/Coding/Projects/FilmProject/SeriesKijken.html'" class="fa-solid fa-film" font-color: #595959;></i>
     </div>
 </main>
 
